@@ -1,0 +1,62 @@
+@import "../../scss/variables.scss";
+.app__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2rem;
+  color: $color-black;
+  background-color: $color-white;
+  transition: $mode-transition;
+}
+
+a {
+  color: $color-green;
+  transition: $mode-transition;
+}
+
+.app__container--dark {
+  background-color: $color-black;
+  color: $color-white;
+  a {
+    color: $color-yellow;
+  }
+
+  .sidebar {
+    background-color: $dark-mode-dark-grey;
+  }
+
+  .btn {
+    color: $color-black;
+    background-color: $color-yellow;
+  }
+
+  .recipe {
+    background-color: $dark-mode-grey;
+  }
+}
+
+.app__sidebar {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sidebar__container {
+  position: sticky;
+  margin: 0 2rem;
+  top: 2rem;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar__switch {
+  margin-top: auto;
+}
+
+.sidebar__btn {
+  margin: 2rem 0;
+}
